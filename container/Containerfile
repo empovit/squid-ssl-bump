@@ -1,0 +1,11 @@
+FROM quay.io/rockylinux/rockylinux:8.6-minimal
+
+RUN microdnf install -y --nodocs squid && microdnf clean all
+
+COPY squid.conf /etc/squid/squid.conf
+
+RUN rm -rf /var/lib/squid/ssl_db && \
+    mkdir -p /var/lib/squid && \
+    /usr/lib64/squid/security_file_certgen -c -s /var/lib/squid/ssl_db -M 20MB
+
+ENTRYPOINT [ "squid", "-NCd1" ]
