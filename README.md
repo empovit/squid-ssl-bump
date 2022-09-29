@@ -17,11 +17,13 @@ How to build/run:
     sudo ./build.sh
     ```
 
-2. Generate CA key and certificate, and a settings file for the Diffie-Hellman algorithm:
+2. Generate a self-signed root CA key and certificate, and a settings file for the Diffie-Hellman algorithm:
 
     ```sh
     ./certs.sh
     ```
+
+    If needed, the key and certificate can be replaced with a custom pair.
 
 3. Start a Squid container:
 
