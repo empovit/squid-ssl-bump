@@ -11,7 +11,7 @@ The scripts require `podman` to run.
 
 How to build/run:
 
-1. _(Optionally)_ build the image. If not built locally, it will be pulled from the registry:
+1. _(Optionally)_ build the image. If not built locally, it will be pulled from [the registry](https://quay.io/repository/vemporop/squid-ssl-bump?tab=tags):
 
     ```sh
     sudo ./build.sh
