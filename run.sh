@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ./config.sh
+source ./variables
 
 echo "###############################"
 echo "!!! MUST RUN WITH SUDO/ROOT !!!"

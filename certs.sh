@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ./config.sh
+source ./variables
 
 mkdir -p $SQUID_CERT_DIR
 
