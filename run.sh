@@ -6,6 +6,8 @@ echo "###############################"
 echo "!!! MUST RUN WITH SUDO/ROOT !!!"
 echo "###############################"
 
+echo "Squid proxy will be listening on port ${SQUID_PORT}"
+
 podman run -d \
     --name $SQUID_CONTAINER \
     --privileged \
